@@ -21,7 +21,7 @@
   --heading-color:   #05070f;
 
   --border-color:    #dbe1f1;
-  --muted-color:     #5b6b88;
+  --muted-color:     #5800db;
 }
 
 
@@ -278,4 +278,36 @@ footer {
     background-color .25s ease,
     color .25s ease,
     border-color .25s ease;
+}
+
+.language-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
+    transition: color 0.3s ease;
+}
+
+.language-toggle:hover {
+    color: var(--accent-color);
+}
+
+.job-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.company-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+    border-radius: 8px;
+}
+
+.job-header h3 {
+    margin: 0;
 }

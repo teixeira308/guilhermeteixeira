@@ -60,6 +60,19 @@ document.addEventListener('DOMContentLoaded', () => {
     sections.forEach(section => {
         sectionObserver.observe(section);
     });
+
+    // Language toggle
+    const languageToggle = document.getElementById('language-toggle');
+    if (languageToggle) {
+        languageToggle.addEventListener('click', () => {
+            const currentLang = document.documentElement.lang;
+            if (currentLang.startsWith('en')) {
+                window.location.href = 'pt/index.html';
+            } else {
+                window.location.href = '../index.html';
+            }
+        });
+    }
 });
 
 // Theme toggle logic
@@ -89,4 +102,3 @@ themeToggle.addEventListener('click', () => {
   const current = root.getAttribute('data-theme');
   setTheme(current === 'dark' ? 'light' : 'dark');
 });
-
