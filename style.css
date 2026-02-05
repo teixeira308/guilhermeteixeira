@@ -311,3 +311,97 @@ footer {
 .job-header h3 {
     margin: 0;
 }
+
+/* hero-specific social icons (placed under profile photo) */
+.hero-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.contact-btn {
+    /* keep a generous clickable area but show no visible circle */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    /* clickable area */
+    height: 48px;
+    padding: 0;
+    border-radius: 50%;
+    text-decoration: none;
+    background: transparent;
+    /* no visible circle */
+    color: var(--text-color);
+    transition: transform .08s ease, color .12s ease;
+    border: none;
+}
+
+.contact-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 170, 255, 0.12);
+}
+
+.contact-icon {
+    font-size: 1.9rem;
+    /* larger icon */
+    color: inherit;
+    width: auto;
+    height: auto;
+    line-height: 1;
+    transition: transform .12s ease, color .12s ease;
+}
+
+.contact-btn:hover .contact-icon,
+.contact-btn:focus .contact-icon {
+    color: var(--accent-color);
+    transform: scale(1.25);
+}
+
+.contact-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.about-skills h3 {
+    margin-bottom: 1rem;
+    border-left: 3px solid var(--accent-color);
+    padding-left: 0.8rem;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.skill-item {
+    background-color: var(--secondary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-family: var(--font-secondary);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skill-item:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 170, 255, 0.3);
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
     <header>
@@ -23,14 +27,14 @@
                     <li><a href="#experience">Experiência</a></li>
                     <li><a href="#education">Educação</a></li>
                     <li><a href="#skills">Habilidades</a></li>
-                    
+
                 </ul>
             </nav>
-           <button id="language-toggle" class="language-toggle" aria-label="Change language">EN</button>
-                  <button id="theme-toggle" aria-label="Toggle theme" class="theme-toggle">
-  <i class="fas fa-moon"></i>
-</button>
- <button class="menu-button" aria-label="Abrir menu">
+            <button id="language-toggle" class="language-toggle" aria-label="Change language">EN</button>
+            <button id="theme-toggle" aria-label="Toggle theme" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="menu-button" aria-label="Abrir menu">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
@@ -45,13 +49,63 @@
                     <a href="tel:+5511973472745"><i class="fas fa-phone"></i> +55 11 97347-2745</a>
                     <a href="mailto:teixeira308@hotmail.com"><i class="fas fa-envelope"></i> teixeira308@hotmail.com</a>
                 </div>
+                <div class="hero-social reveal">
+                    <a class="contact-btn" href="https://github.com/teixeira308" target="_blank"
+                        rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fa-brands fa-github contact-icon" aria-hidden="true"></i>
+                        <span class="contact-text">GitHub</span>
+                    </a>
+                    <a class="contact-btn" href="https://linkedin.com/in/guilherme-gabriel-teixeira-5b369257/"
+                        target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin contact-icon" aria-hidden="true"></i>
+                        <span class="contact-text">LinkedIn</span>
+                    </a>
+                    <a class="contact-btn" href="https://wa.me/5511973472745" target="_blank"
+                        rel="noopener noreferrer" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp contact-icon" aria-hidden="true"></i>
+                        <span class="contact-text">WhatsApp</span>
+                    </a>
+                    <a class="contact-btn" href="mailto:teixeira308@hotmail.com" target="_blank"
+                        rel="noopener noreferrer" aria-label="Email">
+                        <i class="fa-solid fa-envelope contact-icon" aria-hidden="true"></i>
+                        <span class="contact-text">Email</span>
+                    </a>
+                </div>
             </div>
         </section>
 
         <section id="about" class="reveal">
             <div class="container">
                 <h2>Sobre Mim</h2>
-                <p>Engenheiro de Software Backend com mais de 9 anos de experiência em TI, especializado em microsserviços, APIs REST e sistemas distribuídos. Habilidoso em Golang, Java (Spring Boot), Python e bancos de dados SQL/NoSQL, com forte foco em confiabilidade de sistemas, observabilidade e integrações escaláveis.</p>
+                <p>Engenheiro de Software Backend com mais de 9 anos de experiência em TI, especializado em
+                    microsserviços, APIs REST e sistemas distribuídos. Habilidoso em Golang, Java (Spring Boot), Python
+                    e bancos de dados SQL/NoSQL, com forte foco em confiabilidade de sistemas, observabilidade e
+                    integrações escaláveis.</p>
+            
+            <div class="about-skills reveal">
+                <h3>Habilidades:</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">Golang</div>
+                    <div class="skill-item">Java (Spring Boot)</div>
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">Microservices Architecture</div>
+                    <div class="skill-item">REST APIs</div>
+                    <div class="skill-item">Distributed Systems</div>
+                    <div class="skill-item">System Integration</div>
+                    <div class="skill-item">SQL (MySQL / BigQuery)</div>
+                    <div class="skill-item">NoSQL (MongoDB / Redis)</div>
+                    <div class="skill-item">Data Modeling</div>
+                    <div class="skill-item">Observability</div>
+                    <div class="skill-item">Logging, Metrics & Tracing</div>
+                    <div class="skill-item">Docker</div>
+                    <div class="skill-item">Cloud (AWS)</div>
+                    <div class="skill-item">OAuth 2.0</div>
+                    <div class="skill-item">API Documentation</div>
+                    <div class="skill-item">RFC & Technical Specs</div>
+                    <div class="skill-item">Integration Testing</div>
+                    <div class="skill-item">CI/CD</div>
+                    <div class="skill-item">Monitoring (Datadog / Grafana / Kibana)</div>
+                </div>
             </div>
         </section>
 
@@ -69,35 +123,44 @@
                         <ul>
                             <li>Desenvolvimento de microsserviços e APIs REST usando Golang e Java (Spring).</li>
                             <li>Modelagem de dados e integração com bancos de dados MySQL e NoSQL (MongoDB/Redis).</li>
-                            <li>Implementação de testes unitários e de integração para garantir a confiabilidade do sistema.</li>
-                            <li>Desenvolvimento de scripts Python para modelagem e processamento de dados usando Pandas, apoiando recursos e integrações orientadas a dados.</li>
+                            <li>Implementação de testes unitários e de integração para garantir a confiabilidade do
+                                sistema.</li>
+                            <li>Desenvolvimento de scripts Python para modelagem e processamento de dados usando Pandas,
+                                apoiando recursos e integrações orientadas a dados.</li>
                             <li>Suporte a outras equipes sob o modelo You Build It, You Run It.</li>
-                            <li>Implementação de práticas de observabilidade (logging estruturado, métricas, tracing).</li>
+                            <li>Implementação de práticas de observabilidade (logging estruturado, métricas, tracing).
+                            </li>
                             <li>Redação de documentação no estilo RFC e manutenção de especificações técnicas.</li>
                         </ul>
-                        <p><strong>Toolkit:</strong> Golang, Java (Spring Boot), Python (Pandas), MySQL, MongoDB, Redis, Git, Docker, Datadog, Kibana, Grafana.</p>
+                        <p><strong>Toolkit:</strong> Golang, Java (Spring Boot), Python (Pandas), MySQL, MongoDB, Redis,
+                            Git, Docker, Datadog, Kibana, Grafana.</p>
                     </div>
                     <div class="job-description">
                         <h4>Engenheiro de Integração Sênior - março de 2023 - outubro de 2024</h4>
                         <ul>
-                            <li>Definição de requisitos técnicos e funcionais de soluções para medir KPIs, automatizar rotinas e qualidade de integração.</li>
-                            <li>Avaliação, validação e definição de requisitos de qualidade de integração de novas funcionalidades.</li>
-                            <li>Contato com equipes técnicas, P.O. e de negócios, garantindo o sucesso no fluxo de integração e implementações em novos clientes (Grandes Vendedores e Longtail).</li>
+                            <li>Definição de requisitos técnicos e funcionais de soluções para medir KPIs, automatizar
+                                rotinas e qualidade de integração.</li>
+                            <li>Avaliação, validação e definição de requisitos de qualidade de integração de novas
+                                funcionalidades.</li>
+                            <li>Contato com equipes técnicas, P.O. e de negócios, garantindo o sucesso no fluxo de
+                                integração e implementações em novos clientes (Grandes Vendedores e Longtail).</li>
                         </ul>
-                        <p><strong>Toolkit:</strong> Postman, Kibana, Datadog, Visual Studio, Python. - Dados: Big Query, Looker, Tableau. - Gerenciamento de Projetos: Slack, Jira, Confluence, Notion.</p>
+                        <p><strong>Toolkit:</strong> Postman, Kibana, Datadog, Visual Studio, Python. - Dados: Big
+                            Query, Looker, Tableau. - Gerenciamento de Projetos: Slack, Jira, Confluence, Notion.</p>
                     </div>
                     <div class="job-description">
                         <h4>Engenheiro de Integração - maio de 2021 - março de 2023 (1 ano e 11 meses)</h4>
                         <ul>
                             <li>Responsável pela documentação de APIs, casos de uso e testes.</li>
                             <li>Elaboração de fluxos de integração, desenhos técnicos e garantia de qualidade.</li>
-                            <li>Interface com parceiros integrados, fazendo análises técnicas e coletando feedbacks de funcionalidades.</li>
+                            <li>Interface com parceiros integrados, fazendo análises técnicas e coletando feedbacks de
+                                funcionalidades.</li>
                             <li>Fluxo de autorização OAuth 2.0.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="job">
-                     <div class="job-header">
+                    <div class="job-header">
                         <img src="../images/rede.png" alt="Logo Rede" class="company-logo">
                         <h3>Rede</h3>
                     </div>
@@ -116,13 +179,15 @@
                         <ul>
                             <li>Manter a integridade e disponibilidade do ambiente de produção de e-commerce.</li>
                             <li>Análise de logs sistêmicos e interpretação de mensagens ISO8583.</li>
-                            <li>Monitoramento de mudanças sistêmicas, atendimento à integração de clientes e fluxo transacional.</li>
-                            <li>Detecção da causa raiz de impacto transacional financeiro, verificando banco de dados, infraestrutura, links de internet e regras de negócio.</li>
+                            <li>Monitoramento de mudanças sistêmicas, atendimento à integração de clientes e fluxo
+                                transacional.</li>
+                            <li>Detecção da causa raiz de impacto transacional financeiro, verificando banco de dados,
+                                infraestrutura, links de internet e regras de negócio.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="job">
-                     <div class="job-header">
+                    <div class="job-header">
                         <img src="../images/itau.webp" alt="Logo Itaú Unibanco IT" class="company-logo">
                         <h3>Itaú Unibanco IT</h3>
                     </div>
@@ -146,7 +211,8 @@
                     <li>SCRUM FOUNDATION PROFESSIONAL CERTIFICATE (SFPC) - Certificação</li>
                     <li>Certificação - AWS Certified Cloud Practitioner - Certificação</li>
                     <li>FIAP MBA , FULL StACK DEVELOPER MICROSERVICES, CLOUD E IOT · (janeiro 2020 - julho 2021)</li>
-                    <li>Universidade Presbiteriana Mackenzie Sistemas de Informação, Tecnologia da Informação · (2012 - 2016)</li>
+                    <li>Universidade Presbiteriana Mackenzie Sistemas de Informação, Tecnologia da Informação · (2012 -
+                        2016)</li>
                 </ul>
             </div>
         </section>
@@ -173,4 +239,5 @@
 
     <script src="../script.js"></script>
 </body>
+
 </html>
