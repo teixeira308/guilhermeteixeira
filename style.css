@@ -312,6 +312,22 @@ footer {
     margin: 0;
 }
 
+/* Style for "Conheça mais" links */
+.job-description div a {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.job-description div a:hover {
+    background-color: #028e13; /* A darker shade of the accent color */
+}
+
 /* hero-specific social icons (placed under profile photo) */
 .hero-social {
     display: flex;
@@ -381,6 +397,11 @@ footer {
     margin-bottom: 1rem;
     border-left: 3px solid var(--accent-color);
     padding-left: 0.8rem;
+    
+}
+
+.job-header a {
+    text-decoration: none;
 }
 
 .skills-grid {

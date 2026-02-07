@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         languageToggle.addEventListener('click', () => {
             const currentLang = document.documentElement.lang;
             if (currentLang.startsWith('en')) {
-                window.location.href = 'pt/index.html';
+                window.location.href = '/pt/index.html';
             } else {
                 window.location.href = '../index.html';
             }
