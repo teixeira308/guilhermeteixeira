@@ -61,18 +61,16 @@ document.addEventListener('DOMContentLoaded', () => {
         sectionObserver.observe(section);
     });
 
-    // Language toggle
-    const languageToggle = document.getElementById('language-toggle');
-    if (languageToggle) {
-        languageToggle.addEventListener('click', () => {
-            const currentLang = document.documentElement.lang;
-            if (currentLang.startsWith('en')) {
-                window.location.href = '/pt/index.html';
-            } else {
-                window.location.href = '../index.html';
-            }
-        });
-    }
+    document.querySelectorAll('[data-lang-toggle]').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const pt = btn.dataset.pt;
+        const en = btn.dataset.en;
+
+        const currentLang = document.documentElement.lang || 'pt';
+
+        window.location.href = currentLang.startsWith('en') ? pt : en;
+    });
+});
 });
 
 // Theme toggle logic

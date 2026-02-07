@@ -295,6 +295,21 @@ footer {
     color: var(--accent-color);
 }
 
+.language-toggle-projects {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
+    transition: color 0.3s ease;
+}
+
+.language-toggle-projects:hover {
+    color: var(--accent-color);
+}
+
 .job-header {
     display: flex;
     align-items: center;
